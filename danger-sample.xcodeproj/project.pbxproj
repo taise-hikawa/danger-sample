@@ -6,7 +6,12 @@
 	objectVersion = 77;
 	objects = {
 
+/* Begin PBXBuildFile section */
+		D51C893F2D4B9E7E00154656 /* Hoge in Frameworks */ = {isa = PBXBuildFile; productRef = D51C893E2D4B9E7E00154656 /* Hoge */; };
+/* End PBXBuildFile section */
+
 /* Begin PBXFileReference section */
+		D51C893C2D4B9D8800154656 /* LocalPackage */ = {isa = PBXFileReference; lastKnownFileType = wrapper; path = LocalPackage; sourceTree = "<group>"; };
 		D58571AA2D4B1645001557BF /* danger-sample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "danger-sample.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -23,17 +28,27 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D51C893F2D4B9E7E00154656 /* Hoge in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		D51C893D2D4B9E7E00154656 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		D58571A12D4B1645001557BF = {
 			isa = PBXGroup;
 			children = (
 				D58571AC2D4B1645001557BF /* danger-sample */,
 				D58571AB2D4B1645001557BF /* Products */,
+				D51C893C2D4B9D8800154656 /* LocalPackage */,
+				D51C893D2D4B9E7E00154656 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -65,6 +80,7 @@
 			);
 			name = "danger-sample";
 			packageProductDependencies = (
+				D51C893E2D4B9E7E00154656 /* Hoge */,
 			);
 			productName = "danger-sample";
 			productReference = D58571AA2D4B1645001557BF /* danger-sample.app */;
@@ -324,6 +340,13 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		D51C893E2D4B9E7E00154656 /* Hoge */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = Hoge;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = D58571A22D4B1645001557BF /* Project object */;
 }

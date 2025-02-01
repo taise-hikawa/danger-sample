@@ -6,12 +6,13 @@
 //
 
 import SwiftUI
+import Hoge
 
 @main
 struct DangerSampleApp: App {
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            HogeView()
         }
     }
 }

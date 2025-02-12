@@ -24,6 +24,6 @@ jobs:
 
       - name: Danger
         working-directory: LocalPackage
-        run: swift run danger-swift ci
+        run: swift run danger-swift ci --verbose
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}

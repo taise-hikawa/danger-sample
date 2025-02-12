@@ -13,7 +13,7 @@ jobs:
           xcode-version: 16.2.0
 
       - name: Install Danger js
-        run: brew install danger/tap/danger-js
+        run: npm install -g danger@11.0.0
 
       - name: Install SwiftLint
         run: brew install swiftlint

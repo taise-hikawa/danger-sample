@@ -15,6 +15,9 @@ jobs:
       - name: Install Danger js
         run: brew install danger/tap/danger-js
 
+      - name: Install SwiftLint
+        run: brew install swiftlint
+
       - name: Build
         working-directory: LocalPackage
         run: swift build

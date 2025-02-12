@@ -10,6 +10,9 @@ import SwiftUI
 public struct HogeView: View {
     public init() {}
     public var body: some View {
-        Text("This is HogeView")
+        VStack {
+            Text("This is HogeViewThis")
+        }
+
     }
 }

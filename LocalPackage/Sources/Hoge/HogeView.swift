@@ -12,6 +12,7 @@ public struct HogeView: View {
     public var body: some View {
         VStack {
             Text("This is HogeViewThis")
+            Text("This one line is intended to cause a violation of lint and test for warnings. hoge hoge hoge hoge hoge hoge hoge hoge hoge hoge hoge hoge hoge hoge hoge hoge hoge hoge hoge hoge hoge hoge hoge hoge hoge hoge hoge hoge hoge hoge hoge hoge hoge hoge hoge hoge hoge hoge hoge hoge hoge hoge hoge hoge hoge hoge hoge hoge hoge hoge hoge hoge hoge hoge hoge")
         }
 
     }

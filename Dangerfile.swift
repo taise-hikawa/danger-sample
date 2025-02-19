@@ -9,7 +9,7 @@ import Danger
 import Foundation
 
 private let danger = Danger()
-private let pullRequest: danger.github.pullRequest
+private let pullRequest: danger.github!.pullRequest
 private let linesAdded = pullRequest.additions ?? 0
 private let linesDeleted = pullRequest.deletions ?? 0
 private let filesChanged = pullRequest.changedFiles ?? 0

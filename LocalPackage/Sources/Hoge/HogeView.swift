@@ -11,7 +11,7 @@ public struct HogeView: View {
     public init() {}
     public var body: some View {
         VStack {
-            Text("This is HogeViewThis")
+            Text("This is HogeViewThis fugafugafugafugafugafugafugafugafugafugafugafugafugafugafugafugafugafugafugafugafugafugafugafugafugafugafugafugafugafugafuga")
         }
 
     }

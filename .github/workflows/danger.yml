@@ -1,29 +1,15 @@
 name: "Danger Swift"
-on: [pull_request]
-
+on:
+  pull_request:
+    paths:
+      - '.swiftlint.yml'
+      - '**/*.swift'
 jobs:
-  build:
-    runs-on: macos-latest
-
+  swift-lint:
+    runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@master
-      - name: Setup Xcode version
-        uses: maxim-lobanov/setup-xcode@v1
-        with:
-          xcode-version: 16.2.0
-
-      - name: Install Danger js
-        run: brew install danger/tap/danger-js
-
-      - name: Install SwiftLint
-        run: brew install swiftlint
-
-      - name: Build
-        working-directory: LocalPackage
-        run: swift build
-
+      - uses: actions/checkout@v4
       - name: Danger
-        working-directory: LocalPackage
-        run: swift run danger-swift ci --verbose
+        uses: 417-72KI/danger-swiftlint@v5.10
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}

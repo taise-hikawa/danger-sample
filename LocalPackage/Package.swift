@@ -11,17 +11,9 @@ let package = Package(
         .macOS(.v10_15)
     ],
     products: [
-        .library(name: "Hoge", targets: ["Hoge"]),
-        .library(name: "DangerDeps", type: .dynamic, targets: ["DangerTarget"])
-    ],
-    dependencies: [
-        .package(url: "https://github.com/danger/swift.git", .upToNextMajor(from: "3.0.0"))
+        .library(name: "Hoge", targets: ["Hoge"])
     ],
     targets: [
-        .target(name: "Hoge"),
-        .target(
-            name: "DangerTarget",
-            dependencies: [.product(name: "Danger", package: "swift")]
-        )
+        .target(name: "Hoge")
     ]
 )

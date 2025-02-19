@@ -9,7 +9,7 @@ import Danger
 import Foundation
 
 private let danger = Danger()
-guard let pullRequest: danger.github?.pullRequest else { fatalError("Failed to get pull request") }
+guard let pullRequest = danger.github?.pullRequest else { fatalError("Failed to get pull request") }
 private let linesAdded = pullRequest.additions ?? 0
 private let linesDeleted = pullRequest.deletions ?? 0
 private let filesChanged = pullRequest.changedFiles ?? 0
